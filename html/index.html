@@ -1,384 +1,193 @@
-body{
-    background:url("../images/indexBg.png") no-repeat;
-    background-size: 100% 100%;
-}
-.header{
-    width: 95%;
-    margin: 3.5rem auto 0 auto;
-    background-color: #ffffff;
-    border-radius: 20px;
-    text-align: center;
-    padding-bottom: 0.5rem;
-    box-shadow: 0 8px 8px #d7c2bb
-}
-.headImg{
-    width: 1.9rem;
-    height: 1.9rem;
-    border-radius: 50%;
-    position: absolute;
-    left: 42%;
-    top: 2.5rem;
-}
-.numBox{
-    width: 2.4rem;
-    overflow: hidden;
-    margin: 0 auto;
-    padding-top: 1.1rem;
-}
-.icon{
-    display: inline-block;
-    width: 0.6rem;
-    height: 0.6rem;
-    background: url("../images/star.png") no-repeat;
-    background-size:cover;
-    float: left;
-    margin-top: 0.2rem;
-    margin-left: 0.35rem;
-}
-.accumulatePoints{
-    font-size: 0.7rem;
-    color: #feb401;
-    display: inline-block;
-    float: left;
-}
-.calendarBtn{
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    background: url("../images/calendar.png") no-repeat;
-    background-size: cover;
-    position: absolute;
-    right: 0.7rem;
-    top:4rem;
-}
-.icon2{
-    width: 1rem;
-    height: 1rem;
-    background: url("../images/star.png") no-repeat;
-    background-size:cover;
-}
-.infoBox{
-    width: 6rem;
-    height: 1rem;
-    margin: 0.4rem auto;
-    background: url("../images/pointsbg.png") no-repeat;
-    background-size:cover;
-}
-.numInfo{
-    font-size:0.45rem;
-    color: #ffffff;
-    float: left;
-    margin-left: 2rem;
-    margin-top: 0.1rem;
-}
-.finished,.unfinished{
-    width:0.85rem;
-    text-align: center;
-    float: left;
-}
-.unfinished,.finished img{
-    width:0.87rem;
-    height: 0.87rem;
-    border-radius: 50%;
-}
-.date{
-    font-size: 0.3rem;
-    color: #feb401;
-}
-.timeInfo{
-    overflow: hidden;
-    padding: 0 0.2rem;
-    margin: 0.4rem 0;
-}
-.line{
-    display: block;
-    width: 0.5rem;
-    height: 0.85rem;
-    float: left;
-    background: url("../images/line.png") no-repeat;
-    background-size: cover;
-}
-.state{
-    display: inline-block;
-    font-size: 0.45rem;
-    font-weight: 500;
-    color: #f06a3e;
-    background-color: #f9e6de;
-    padding: 0.1rem 1rem;
-    border-radius: 30px;
-    margin: 0 auto;
-}
-/*任务栏*/
-.content{
-    padding: 0 0.2rem;
-}
-.title{
-    padding: 0.4rem 0;
-}
-.finishedTaskNum{
-    color: #f9ab10;
-}
-.icon3{
-    display: inline-block;
-    width: 6px;
-    height: 0.6rem;
-    background-color: #f9ab10;
-    margin-right: 0.3rem;
-    position: relative;
-    top: 0.1rem;
-}
-h3{
-    display: inline-block;
-    font-size: 0.55rem;
-    color: #000000;
-    font-weight: 600;
-    letter-spacing:2px;
-}
-.taskNum{
-    display: inline-block;
-    font-size: 0.4rem;
-    color: #000000;
-    position: relative;
-    bottom: 0;
-    left: 4.2rem;
-}
-.taskList{
-    background-color: #ffffff;
-    overflow: hidden;
-    padding: 0.2rem 0.2rem;
-    margin-bottom: 0.2rem;
-    border-radius: 10px;
-}
-.taskInfo{
-    display: inline-block;
-    width: 6rem;
-    padding-top: 0.2rem;
-    padding-left: 0.1rem;
-}
-.taskImg{
-    display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-top: 0.35rem;
-    margin-right: 0.2rem;
-    float: left;
-}
-.pd-t{
-    padding-top: 0.2rem;
-}
-.taskName{
-    width: 1.6rem;
-    display: inline-block;
-    font-size: 0.4rem;
-    font-weight: 600;
-    color: #000000;
-    float: left;
-}
-.moredistance{
-    letter-spacing: 0.2rem;
-}
-.add{
-    display: inline-block;
-    font-size: 0.43rem;
-    color: #f9ab10;
-    margin-left: 0.3rem;
-    float: left;
-}
-.taskMain{
-    font-size: 0.32rem;
-    float: left;
-    margin: 0.1rem 0;
-    color: #888888;
-}
-.md-b0{
-    margin-bottom: 0!important;
-}
-.off{
-    color: #aaaaaa!important;
-}
-.icon4{
-    display: inline-block;
-    width: 0.48rem;
-    height: 0.48rem;
-    background: url("../images/star.png") no-repeat;
-    background-size:cover;
-    float: left;
-    margin-top: 0.05rem;
-    margin-right: 0.1rem;
-}
-.taskLeft{
-    float: left;
-}
-.taskRight{
-    float: right;
-}
-.finishedState{
-    color: #ffffff;
-    font-size: 0.3rem;
-    padding:0.2rem 0.6rem;
-    margin-top: 0.35rem;
-    background-color:#f9ab10;
-    border-radius: 20px;
-    float: right;
-    letter-spacing: 2px;
-}
-.unfinishedState{
-    color: #f9ab10;
-    font-size: 0.3rem;
-    padding:0.18rem 0.44rem;
-    margin-top: 0.35rem;
-    border: 1px solid #f9ab10;
-    border-radius: 20px;
-    float: right;
-}
-.findMore{
-    display: inline-block;
-    font-size: 0.4rem;
-    color: #888888;
-    position: relative;
-    bottom: 0;
-    left: 4.2rem;
-}
-/*进度条*/
-/* votebox */
-
-/* barbox */
-.barbox{display: inline-block; line-height: 0.3rem;float: left;margin-top: 0.15rem;margin-left: 0.35rem}
-.barbox dd{float:left;}
-.barbox dd.last{color:#999;}
-.barbox dd.barline{width:1rem;background:url(../images/jdtbg.png) left center no-repeat;height:0.28rem;display:inline;border-radius:20px;}
-.barbox dd.barline div.charts{height:0.28rem;overflow:hidden;background:url(../images/barbg.gif) right center repeat-x;border-radius:20px;}
-.barInfo{display:inline-block;float:right;font-size: 0.33rem;color: #888888;margin-left: 0.1rem}
-.barColor{color:#f9ab10}
-
-/*兑换区*/
-.content{
-    padding: 0 0.2rem;
-}
-.goodsBox{
-    overflow: hidden;
-    background-color: #ffffff;
-    padding: 0.5rem 0.1rem;
-    border-radius: 15px;
-}
-.goodsMain{
-    text-align: center;
-    float: left;
-    background-color: #fefcfd;
-    padding: 0.3rem 0.31rem;
-}
-.goodsImg{
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-}
-.goodsTitle{
-    width: 2.5rem;
-    font-size: 0.4rem;
-    white-space:nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow:ellipsis;
-    color: #000000;
-    letter-spacing: 2px;
-}
-.goodsIntegral{
-    font-size: 0.33rem;
-    margin: 0.1rem 0;
-    color: #f9ab10;
-}
-.exchangeBtn{
-    font-size: 0.36rem;
-    color: #f9ab10;
-    border: 1px solid #f9ab10;
-    border-radius: 15px;
-    padding: 0.15rem 0.45rem;
-    margin-top: 0.15rem;
-}
-.m-l-r{
-    margin: 0 0.2rem;
-}
-/*邀请*/
-.icon5{
-    display: inline-block;
-    width: 0.78rem;
-    height: 0.55rem;
-    background: url("../images/quan.png") no-repeat;
-    background-size:cover;
-    float: left;
-    margin-right: 0.1rem;
-}
-/*底部*/
-.footer{
-    text-align: center;
-    padding: 1rem 0;
-}
-.footer img {
-    width: 6rem;
-    height: 3rem;
-    display: inline-block;
-}
-.autoContent{
-    width: 100%;
-    height: 40rem;
-    background-color: rgba(0,0,0,0.6);
-    position:absolute;
-    top: 0;
-}
-.autoBox{
-    width: 8.5rem;
-    height: 14rem;
-    background: url("../images/autoBg.png") no-repeat;
-    background-size: cover;
-    text-align: center;
-    position: fixed;
-    left: 0.8rem;
-}
-.star{
-    display: inline-block;
-    width: 1.3rem;
-    height: 1.3rem;
-    padding: 0.2rem 3rem;
-}
-.success{
-    font-size: 0.45rem;
-    color: #ff900b;
-    padding-top: 5.5rem;
-    margin-bottom: 0.2rem;
-}
-.successIcon{
-    display: inline-block;
-    width: 0.6rem;
-    height: 0.6rem;
-    background: url("../images/true.png")no-repeat;
-    background-size: cover;
-    margin-right: 0.2rem;
-    position: relative;
-    top:0.1rem
-}
-.autoMain{
-    color: #7f4b19;
-    font-size: 0.4rem;
-    padding: 0.1rem 0;
-}
-.toPoster{
-    display: inline-block;
-    font-size: 0.4rem;
-    color: #ffffff;
-    background-color: #f9ab10!important;
-    border-radius: 15px;
-    padding: 0.2rem 0.8rem;
-}
-.total,.getPoints{
-    font-size: 0.45rem;
-    color: #dd3433;
-}
-.closeAuto{
-    width: 1rem;
-    height: 2.3rem;
-    background: url("../images/close.png") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 12.1rem;
-    left: 4.6rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>每日签到</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flex.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="header">
+        <img class="headImg" src="../images/vx-headerImg.jpg" alt="">
+        <div class="numBox"><i class="icon"></i><span class="accumulatePoints">100</span></div>
+        <a class="calendarBtn" href="./sign.html"></a>
+        <div class="infoBox">
+            <span class="numInfo">连续打卡N天</span>
+        </div>
+        <div class="timeInfo">
+            <div class="finished">
+                <img src="../images/finished.png" alt="">
+                <p class="date">7/14</p>
+            </div>
+            <i class="line"></i>
+            <div class="finished">
+                <img src="../images/finished.png" alt="">
+                <p class="date">7/15</p>
+            </div>
+            <i class="line"></i>
+            <div class="finished">
+                <img src="../images/finished.png" alt="">
+                <p class="date">今天</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished ">
+                <img src="../images/addTen.png" alt="">
+                <p class="date off">7/17</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date off">7/18</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date off">7/19</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date off">7/20</p>
+            </div>
+        </div>
+    <div class="state">今日已打卡</div>
+</div>
+<!--任务区-->
+<div class="content">
+    <div class="title">
+        <span class="icon3"></span>
+        <h3>今日任务</h3>
+        <p class="taskNum">任务数 <span class="finishedTaskNum">1</span>/3</p>
+    </div>
+    <ul>
+        <li class="taskList">
+            <div class="taskLeft">
+                    <img class="taskImg" src="../images/task1.png" alt="">
+                <div class="taskInfo">
+                    <p class="taskName">转发文章</p><span class="add"><i class="icon4"></i> +10</span>
+                    <p class="taskMain">转发1篇文章至朋友圈可获得10积分</p>
+                </div>
+            </div>
+            <div class="taskRight">
+                <span class="finishedState">完成</span>
+            </div>
+        </li>
+        <li class="taskList">
+        <div class="taskLeft">
+            <img class="taskImg" src="../images/task2.png" alt="">
+            <div class="taskInfo">
+                <p class="taskName moredistance">留言</p><span class="add"><i class="icon4"></i> +10</span>
+                <!--进度条-->
+                    <dl class="barbox">
+                        <dd class="barline">
+                            <div w="50" style="width:0;" class="charts"></div>
+                        </dd>
+                        <p class="barInfo"><span class="barColor">1</span>/2</p>
+                    </dl>
+                <p class="taskMain">留言1篇文章可得5积分最高可得10积分</p>
+            </div>
+        </div>
+        <div class="taskRight">
+            <a class="unfinishedState">去完成</a>
+        </div>
+    </li>
+        <li class="taskList">
+            <div class="taskLeft">
+                <img class="taskImg" src="../images/task3.png" alt="">
+                <div class="taskInfo">
+                    <p class="taskName">看一看</p><span class="add"><i class="icon4"></i> +10</span>
+                    <p class="taskMain">点"在看"一篇文章得5积分最高可得10积分</p>
+                </div>
+            </div>
+            <div class="taskRight">
+                <a class="unfinishedState">去完成</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<script language="javascript">
+    function animate(){
+        $(".charts").each(function(i,item){
+            var a=parseInt($(item).attr("w"));
+            $(item).animate({
+                width: a+"%"
+            },1000);
+        });
+    }
+    animate();
+</script>
+<!--换购区-->
+<div class="content">
+    <div class="title">
+        <span class="icon3"></span>
+        <h3>积分换购</h3>
+        <a class="findMore" href="./goodsList.html">查看更多></a>
+    </div>
+        <ul class="goodsBox">
+            <li class="goodsMain">
+                <img class="goodsImg" src="../images/goods.png" alt="">
+                <p class="goodsTitle">余华《活着》ssss</p>
+                <p class="goodsIntegral">888积分</p>
+                <a href="./goods.html" class="exchangeBtn">立即换购</a>
+            </li>
+            <li class="goodsMain">
+                <img class="goodsImg" src="../images/goods.png" alt="">
+                <p class="goodsTitle">余华《活着》ssss</p>
+                <p class="goodsIntegral">888积分</p>
+                <a href="./goods.html" class="exchangeBtn">立即换购</a>
+            </li>
+            <li class="goodsMain">
+                <img class="goodsImg" src="../images/goods.png" alt="">
+                <p class="goodsTitle">余华《活着》ssss</p>
+                <p class="goodsIntegral">888积分</p>
+                <a href="./goods.html" class="exchangeBtn">立即换购</a>
+            </li>
+        </ul>
+</div>
+<!--邀请区-->
+<div class="content">
+    <div class="title">
+        <span class="icon3"></span>
+        <h3>邀请有礼</h3>
+    </div>
+    <div class="taskList">
+        <div class="taskLeft">
+            <img class="taskImg pd-t" src="../images/invite.png" alt="">
+            <div class="taskInfo">
+                <p class="taskName">邀请好友</p><span class="add"><i class="icon5"></i> 30¥ ×1</span>
+                <p class="taskMain pd-b0">每成功邀请1位好友关注订阅号可互相获得</p>
+                <p class="taskMain">九丘商城30元优惠券1张</p>
+            </div>
+        </div>
+        <div class="taskRight">
+            <a href="./invite.html" class="unfinishedState">去邀请</a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img src="../images/footer.png" alt="">
+</div>
+<!--自动打卡层-->
+<div class="autoContent">
+    <div class="autoBox">
+        <p class="success"><i class="successIcon"></i>打卡成功</p>
+        <p class="autoMain">连续签到第<span class="total">3</span>天</p>
+        <p class="autoMain">获得<span class="getPoints">10</span>积分</p>
+        <img class="star" src="../images/star2.png" alt="">
+        <a href="./poster.html" class="toPoster">生成今日打卡海报</a>
+    </div>
+    <div class="closeAuto"></div>
+</div>
+<script>
+    $('.closeAuto').click(function () {
+        $('.autoContent').hide()
+    })
+    $('.autoContent').click(function () {
+        $(this).hide()
+    })
+</script>
+</body>
+</html>
