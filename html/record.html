@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>兑换记录</title>
+    <script src="../js/flex.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/record.css">
+</head>
+<script>
+    $(function () {
+        var len=$('.infoBox').length
+        console.log(len==0)
+        if(len==0){
+            var noneBg="<img class='noneBg' src='../images/none.png'> </img>"
+            $('.content').append(noneBg)
+            $('body').css('background-color','#ffffff')
+        }
+    }  )
+</script>
+<body>
+<div class="content">
+    <ul>
+        <li class="infoBox">
+            <div class="buyTime"><span>2019-07-23</span><span>11:00:17</span></div>
+            <div class="info">
+                <img class="recordIcon" src="../images/recordIcon.png" alt="">
+                <div class="infoMain"><span class="name">余华《活着》</span><span class="consume">实付488积分</span></div>
+                <span class="num">×1</span>
+            </div>
+        </li>
+        <li class="infoBox">
+            <div class="buyTime"><span>2019-07-23</span><span>11:00:17</span></div>
+            <div class="info">
+                <img class="recordIcon" src="../images/recordIcon.png" alt="">
+                <div class="infoMain"><span class="name">余华《活着》</span><span class="consume">实付488积分</span></div>
+                <span class="num">×1</span>
+            </div>
+        </li>
+        <li class="infoBox">
+            <div class="buyTime"><span>2019-07-23</span><span>11:00:17</span></div>
+            <div class="info">
+                <img class="recordIcon" src="../images/recordIcon.png" alt="">
+                <div class="infoMain"><span class="name">余华《活着》</span><span class="consume">实付488积分</span></div>
+                <span class="num">×1</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>商品详情</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flex.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/goods.css">
+</head>
+<body>
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/goodsBig.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/goodsBig.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/goodsBig.jpg" alt=""></div>
+            </div>
+        <div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+    </div>
+    <div class="goodsTitle">余华《活着》</div>
+    <div class="goodsMain">
+        <span class="num">488<span class="unit">积分</span></span>
+        <p class="originalPrice">市场价：<span>¥22.75</span></p>
+        <span class="exchangeState">已有18人换购</span>
+    </div>
+    <div class="sendBox">
+        <span>运费</span>
+        <span class="freight">¥0.00</span>
+        <span class="from">由九丘商城发货</span>
+    </div>
+    <div class="goodsInfo">
+        <img src="../images/goodinfo.png" alt="">
+    </div>
+    <div class="tips">
+        <p>兑换说明：</p>
+        <p>a.账户内的积分可在积分商城中兑换图书，兑换成功后，积分扣减。</p>
+        <p>b.奖品兑换成功会通过快递发货</p>
+        <p>c.所有发货奖品包邮，不收取兑换人任何费用。</p>
+        <p>d.积分使用过程中不找零、不兑现、不开发票，不可转移至其他账户。</p>
+        <p>e.兑换的奖品不可退换货。</p>
+        <p>f.平台保留最终解释权。</p>
+    </div>
+<div class="buyBox">
+    <div class="buyLeft">
+        <span class="name">积分价：</span>
+        <span class="num2">488<span class="unit2">积分</span></span>
+    </div>
+    <a class="sendBuy cantBuy" href="./confirm.html">积分不足</a>
+</div>
+</body>
+<script src="../js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    })
+</script>
+</html>

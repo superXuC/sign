@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>换购成功</title>
+    <script src="../js/flex.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/success.css">
+</head>
+<body>
+<div class="header">
+    <img src="../images/success.png" alt="">
+</div>
+<div class="btnBox">
+    <a class="toIndex" href="./index.html">返回首页</a>
+    <button class="shareBtn">分享好友</button>
+    <div class="tips">
+        <span class="tipsHead">说明：</span>
+        <span class="tipsMain">奖品兑换成功会通过快递发货,所有发货奖品包邮,不收取兑换人任何费用,兑换的奖品不可以退换货.</span>
+    </div>
+</div>
+<div class="shareBox">
+    <div class="shareNav">
+        <h3 class="shareTitle">分享至</h3>
+        <ul>
+            <li class="shareList"><span class="share"></span><span class="shareName">微信好友</span></li>
+            <li class="shareList"><span class="share2"></span><span class="shareName">朋友圈</span></li>
+        </ul>
+        <div class="btnClose">取消</div>
+    </div>
+</div>
+<script>
+    $('.shareBtn').click(function () {
+        $('.shareBox').show()
+    })
+    $('.btnClose').click(function () {
+        $('.shareBox').hide()
+    })
+</script>
+</body>
+</html>

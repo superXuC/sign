@@ -1,0 +1,70 @@
+.exchangeGoods{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    float: left;
+}
+.infoMain{
+    font-size: 0.5rem;
+    color: #000000;
+    display: inline-block;
+    float: left;
+    padding: 0.15rem 0;
+}
+.content{
+    padding: 0.6rem 0.3rem;
+    background:#ffffff;
+}
+.box{
+    overflow: hidden;
+    padding-bottom: 0.6rem;
+}
+.num{
+    font-size: 0.4rem;
+    margin-top: 1rem;
+}
+.need{
+    font-size: 0.5rem;
+    padding-top: 0.6rem;
+    border-top: 2px solid #eeeeee;
+    overflow: hidden;
+}
+.title{
+    color: #999999;
+    float: left;
+}
+.price{
+    color: #fea900;
+    float: right;
+}
+.buyBox{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+.num2{
+    font-size: 0.6rem;
+    color: #ed5564;
+    font-weight: 600;
+}
+.unit2{
+    font-size: 0.32rem;
+    color: #ed5564;
+}
+.buyLeft{
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+}
+.sendBuy{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.47rem;
+    padding: 0.5rem 1.74rem;
+    position: relative;
+    right: -0.5rem;
+}
+.canBuy{
+    background-color: #ed5564!important;
+}

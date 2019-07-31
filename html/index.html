@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>每日签到</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flex.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="header">
+        <img class="headImg" src="../images/vx-headerImg.jpg" alt="">
+        <div class="numBox"><i class="icon"></i><span class="accumulatePoints">100</span></div>
+        <a class="calendarBtn" href="./sign.html"></a>
+        <div class="infoBox">
+            <span class="numInfo">连续打卡N天</span>
+        </div>
+        <div class="timeInfo">
+            <div class="finished">
+                <img src="../images/finished.png" alt="">
+                <p class="date">7/14</p>
+            </div>
+            <i class="line"></i>
+            <div class="finished">
+                <img src="../images/finished.png" alt="">
+                <p class="date">7/15</p>
+            </div>
+            <i class="line"></i>
+            <div class="finished">
+                <img src="../images/finished.png" alt="">
+                <p class="date">今天</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date">今天</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date">7/16</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date">7/17</p>
+            </div>
+            <i class="line"></i>
+            <div class="unfinished">
+                <img src="../images/addTen.png" alt="">
+                <p class="date">7/18</p>
+            </div>
+        </div>
+    <div class="state">今日已打卡</div>
+</div>
+<!--任务区-->
+<div class="content">
+    <div class="title">
+        <span class="icon3"></span>
+        <h3>今日任务</h3>
+        <p class="taskNum">任务数 <span class="finishedTaskNum">1</span>/3</p>
+    </div>
+    <ul>
+        <li class="taskList">
+            <div class="taskLeft">
+                    <img class="taskImg" src="../images/task1.png" alt="">
+                <div class="taskInfo">
+                    <p class="taskName">转发文章</p><span class="add"><i class="icon4"></i> +10</span>
+                    <p class="taskMain">转发1篇文章至朋友圈可获得10积分</p>
+                </div>
+            </div>
+            <div class="taskRight">
+                <span class="finishedState">已完成</span>
+            </div>
+        </li>
+        <li class="taskList">
+        <div class="taskLeft">
+            <img class="taskImg" src="../images/task2.png" alt="">
+            <div class="taskInfo">
+                <p class="taskName">留言</p><span class="add"><i class="icon4"></i> +10</span>
+                <!--进度条-->
+                    <dl class="barbox">
+                        <dd class="barline">
+                            <div w="50" style="width:0;" class="charts"></div>
+                        </dd>
+                        <p class="barInfo"><span class="barColor">1</span>/2</p>
+                    </dl>
+                <p class="taskMain">留言1篇文章可得5积分最高可得10积分</p>
+            </div>
+        </div>
+        <div class="taskRight">
+            <a class="unfinishedState">去完成</a>
+        </div>
+    </li>
+        <li class="taskList">
+            <div class="taskLeft">
+                <img class="taskImg" src="../images/task3.png" alt="">
+                <div class="taskInfo">
+                    <p class="taskName">看一看</p><span class="add"><i class="icon4"></i> +10</span>
+                    <p class="taskMain">点"在看"一篇文章得5积分最高可得10积分</p>
+                </div>
+            </div>
+            <div class="taskRight">
+                <a class="unfinishedState">去完成</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<script language="javascript">
+    function animate(){
+        $(".charts").each(function(i,item){
+            var a=parseInt($(item).attr("w"));
+            $(item).animate({
+                width: a+"%"
+            },1000);
+        });
+    }
+    animate();
+</script>
+<!--换购区-->
+<div class="content">
+    <div class="title">
+        <span class="icon3"></span>
+        <h3>积分换购</h3>
+        <a class="findMore" href="./goodsList.html">查看更多></a>
+    </div>
+        <ul class="goodsBox">
+            <li class="goodsMain">
+                <img class="goodsImg" src="../images/goods.png" alt="">
+                <p class="goodsTitle">余华《活着》ssss</p>
+                <p class="goodsIntegral">888积分</p>
+                <a href="./goods.html" class="exchangeBtn">立即换购</a>
+            </li>
+            <li class="goodsMain">
+                <img class="goodsImg" src="../images/goods.png" alt="">
+                <p class="goodsTitle">余华《活着》ssss</p>
+                <p class="goodsIntegral">888积分</p>
+                <a href="./goods.html" class="exchangeBtn">立即换购</a>
+            </li>
+            <li class="goodsMain">
+                <img class="goodsImg" src="../images/goods.png" alt="">
+                <p class="goodsTitle">余华《活着》ssss</p>
+                <p class="goodsIntegral">888积分</p>
+                <a href="./goods.html" class="exchangeBtn">立即换购</a>
+            </li>
+        </ul>
+</div>
+<!--邀请区-->
+<div class="content">
+    <div class="title">
+        <span class="icon3"></span>
+        <h3>邀请有礼</h3>
+    </div>
+    <div class="taskList">
+        <div class="taskLeft">
+            <img class="taskImg" src="../images/invite.png" alt="">
+            <div class="taskInfo">
+                <p class="taskName">邀请好友</p><span class="add"><i class="icon5"></i> 30¥ ×2</span>
+                <p class="taskMain">每成功邀请1位好友关注订阅号可互相获得</p>
+                <p class="taskMain">九丘商城30元优惠券2张</p>
+            </div>
+        </div>
+        <div class="taskRight">
+            <a href="./invite.html" class="unfinishedState">去邀请</a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img src="../images/footer.png" alt="">
+</div>
+<!--自动打卡层-->
+<div class="autoContent">
+    <div class="autoBox">
+        <p class="success"><i class="successIcon"></i>打卡成功</p>
+        <p class="autoMain">连续签到第<span class="total">3</span>天</p>
+        <p class="autoMain">获得<span class="getPoints">10</span>积分</p>
+        <img class="star" src="../images/star2.png" alt="">
+        <a href="./poster.html" class="toPoster">生成今日打卡海报</a>
+    </div>
+    <div class="closeAuto"></div>
+</div>
+<script>
+    $('.closeAuto').click(function () {
+        $('.autoContent').hide()
+    })
+    $('.autoContent').click(function () {
+        $(this).hide()
+    })
+</script>
+</body>
+</html>

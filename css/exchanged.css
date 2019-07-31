@@ -1,0 +1,76 @@
+.header{
+    padding: 0.4rem 0.6rem;
+}
+.prizeBox{
+    text-align: center;
+    position: absolute;
+    top:7.4rem;
+    left: 1.6rem;
+}
+.prize {
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    color: #d63e3d;
+}
+.copy{
+    display: inline-block;
+    font-size: 0.4rem;
+    color: #ffffff;
+    background-color: #f26e5f;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 2px 2px 1px #d01b22;
+    margin-top: 1.1rem;
+    border:none;
+}
+.tips{
+    font-size: 0.33rem;
+    margin-top: 0.2rem;
+}
+.toShop{
+    font-size: 0.5rem;
+    background-color: #d63e3d!important;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding: 0.2rem 3.3rem;
+    border-radius: 0.5rem;
+}
+.content{
+    text-align: center;
+    padding-top: 0.3rem;
+}
+.tips2{
+    font-size: 0.2rem;
+    color: #888888;
+    padding: 1.2rem 0.5rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+}
+.tipsHead{
+    display: inline-block;
+    width: 1.5rem;
+    height: 2rem;
+    float: left;
+}
+.tipsMain{
+    display: inline-block;
+    width: 7rem;
+    height: 2rem;
+    float: left;
+    text-align: left;
+}
+/*VIP兑换*/
+.vipPrize{
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    color: #000000;
+    padding-left: 0.5rem;
+}
+.toSuccess{
+    font-size: 0.45rem;
+    background-color: #faab10!important;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding: 0.2rem 3.3rem;
+    border-radius: 0.5rem;
+}

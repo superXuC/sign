@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>换购成功</title>
+    <script src="../js/flex.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/exchanged.css">
+</head>
+<body>
+    <div class="header">
+        <img class="headerImg" src="../images/rmb5.png" alt="">
+        <div class="prizeBox">
+            <div class="prize" id="copyVal">45454545454545454545</div>
+            <button class="copy" data-clipboard-action="copy" data-clipboard-target="#copyVal">复制卡密</button>
+            <p class="tips">复制卡密进入商城激活</p>
+        </div>
+    </div>
+    <div class="content">
+        <a href="http://www.joqiu.com.cn/wap/tmpl/member/voucher_pwex.html" class="toShop">进入商城</a>
+        <div class="tips2">
+            <span class="tipsHead">说明：</span>
+            <span class="tipsMain">无门槛券领取后在商城结算时使用，可与店铺满减叠加使用，不可与优惠券叠加使用.优惠券在规定日期内使用，在九丘商城其他店铺购买无法使用，仅限九丘自营店铺</span>
+        </div>
+    </div>
+    <script>
+        var clipboard = new ClipboardJS('.copy');
+
+        clipboard.on('success', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+            alert('复制失败，请手动复制兑换码')
+        });
+    </script>
+</body>
+</html>

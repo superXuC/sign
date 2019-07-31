@@ -1,0 +1,40 @@
+.content{
+    padding: 0.8rem 0.5rem;
+}
+.content ul{
+    overflow: hidden;
+}
+.buyTime{
+    font-size: 0.2rem;
+    color: #b5b5b5;
+
+}
+.recordIcon{
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    margin-top: 0.4rem;
+    margin-right: 0.2rem;
+}
+.infoMain{
+    float: left;
+}
+.name{
+    display: inline-block;
+    font-size: 0.4rem;
+    color: #000000;
+    padding-right: 1.8rem;
+}
+.consume{
+    display: inline-block;
+    font-size: 0.29rem;
+    color: #000000;
+    padding-left: 1rem;
+}
+.num{
+    font-size: 0.2rem;
+    color: #b5b5b5;
+}
+.infoBox{
+     padding: 0.3rem 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>每日签到</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flex.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/poster.css">
+</head>
+<body>
+<div class="content">
+
+    <div class="info">
+        <div><span class="week">FRI</span></div>
+        <p class="date">19</p>
+        <i class="icon"></i>
+        <p class="month">07</p>
+        <p class="main">地狱和天堂都在人间，即残疾与爱情，即原罪与拯救。</p>
+        <p class="author">——史铁生</p>
+        <button class="shareBtn">立即分享</button>
+    </div>
+</div>
+<div class="shareBox">
+    <div class="shareNav">
+            <h3 class="shareTitle">分享至</h3>
+            <ul>
+                <li class="shareList"><span class="share"></span><span class="shareName">微信好友</span></li>
+                <li class="shareList"><span class="share2"></span><span class="shareName">朋友圈</span></li>
+                <li class="shareList"><span class="share3"></span><span class="shareName">保存相册</span></li>
+            </ul>
+        <div class="btnClose">取消</div>
+    </div>
+</div>
+<script>
+    $('.shareBtn').click(function () {
+        $('.shareBox').show()
+    })
+    $('.btnClose').click(function () {
+        $('.shareBox').hide()
+    })
+</script>
+</body>
+</html>

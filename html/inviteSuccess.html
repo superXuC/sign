@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>邀请有礼</title>
+    <script src="../js/flex.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/inviteSuccess.css">
+</head>
+<body>
+<div class="successContent">
+    <h1 class="title">邀请好友领福利</h1>
+
+    <div class="successBox">
+            <p class="successTitle">代金券卡密</p>
+            <div class="prize" id="copyVal">45454545454545454545</div>
+            <button class="copy" data-clipboard-action="copy" data-clipboard-target="#copyVal">复制卡密</button>
+            <p class="tips">复制卡密进入商城激活</p>
+    </div>
+</div>
+<a href="http://www.joqiu.com.cn/wap/tmpl/member/voucher_pwex.html" class="inviteBtn">进入商城</a>
+<div class="useTips">
+    <p>卡密兑换步骤：</p>
+    <p>复制兑换码，进入商城→进入个人中心</p>
+    <p>点击“代金券”→点击领取代金券</p>
+    <p>并输入卡密兑换→兑换成功后</p>
+    <p>优惠券在结算时减扣</p>
+</div>
+</body>
+<script>
+    var clipboard = new ClipboardJS('.copy');
+
+    clipboard.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        alert('复制失败，请手动复制兑换码')
+    });
+</script>
+</html>

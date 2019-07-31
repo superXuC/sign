@@ -1,0 +1,130 @@
+body{
+	text-align: center;
+}
+.sign table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+.sign th,
+.sign td {
+	height: 0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	border-bottom: 0.01rem solid #e3e3e3;
+}
+
+.sign th {
+	font-size: 0.28rem;
+}
+
+.sign td {
+	font-size: 0.32rem;
+	color: #404040;
+	vertical-align: middle;
+	padding: 0.2rem 0.2rem;
+}
+
+.sign .on {
+	padding: -0.1rem;
+	background: url(../images/sign.png) no-repeat right 0.05rem bottom 0.05rem;
+	background-size:0.3rem 0.3rem;
+	color: #dc4d4f;
+	font-weight: bold;
+	background-position:0.56rem 0.8rem;
+}
+
+.calendar_month_next,
+.calendar_month_prev {
+	width: 1.5rem;
+	height: 0.8rem;
+
+}
+
+.calendar_month_next {
+	float: right;
+	background: url(../images/right.png) no-repeat left center;
+	background-size:30% 50%;
+	padding-top: 0.2rem;
+}
+.calendar_month_prev {
+	float: left;
+	background: url(../images/left.png) no-repeat right center;
+	background-size:30% 50%;
+	padding-top: 0.2rem;
+}
+
+.calendar_month_span {
+	display: inline;
+	line-height: 0.8rem;
+	font-size: 0.30rem;
+	color: #000;
+	letter-spacing: 0.02rem;
+	font-weight: bold;
+}
+
+
+.sign_succ_calendar_title {
+	text-align: center;
+	width: 100%;
+	line-height: 0.8rem;
+	border-bottom: 0.01rem solid #e3e3e3;
+	background: #fff;
+}
+
+.sign_main {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	border-top: 0.01rem solid #e3e3e3;
+}
+.headImg{
+	width: 1.9rem;
+	height: 1.9rem;
+	border-radius: 50%;
+	display: inline-block;
+}
+.numBox{
+	width: 2.4rem;
+	overflow: hidden;
+	margin: 0 auto;
+	padding:0 0.2rem;
+	text-align: center;
+}
+.icon{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url("../images/star.png") no-repeat;
+	background-size:cover;
+	float: left;
+	margin-top: 0.2rem;
+	margin-left: 0.35rem;
+}
+.accumulatePoints{
+	font-size: 0.7rem;
+	color: #feb401;
+	display: inline-block;
+	float: left;
+}
+.numInfo{
+	font-size:0.45rem;
+	color: #ffffff;
+	float: left;
+	margin-left: 2rem;
+	margin-top: 0.1rem;
+
+}
+.content{
+	overflow: hidden;
+	text-align: center;
+	padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+	background-color: #eb847b;
+}
+.infoBox{
+	width: 6rem;
+	height: 1rem;
+	margin: 0.1rem auto 0 auto;
+	background: url("../images/pointsbg.png") no-repeat;
+	background-size:cover;
+}
