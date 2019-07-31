@@ -32,7 +32,7 @@ body{
     background: url("../images/star.png") no-repeat;
     background-size:cover;
     float: left;
-    margin-top: 0.2rem;
+   
     margin-left: 0.35rem;
 }
 .accumulatePoints{
