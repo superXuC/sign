@@ -1,151 +1,48 @@
-body{
-    background: url("../images/posterBg.jpg")no-repeat;
-    background-size: 100% 100%;
-}
-html,body {
-    width: 100%;
-    height: 100%;
-}
-body {
-    padding-top: constant(safe-area-inset-top);
-    padding-right: constant(safe-area-inset-right);
-    padding-bottom: constant(safe-area-inset-bottom);
-    padding-left: constant(safe-area-inset-left);
-}
-.content{
-    padding:1rem 1rem 0 1rem ;
-    color: #ffffff;
-}
-.week{
-    font-size: 0.5rem;
-    font-weight:lighter;
-    padding: 0 0.3rem;
-    border: 1px solid #ffffff;
-    letter-spacing: 5px;
-}
-.date{
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 5px;
-}
-.month{
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 5px;
-}
-.icon{
-    display: block;
-    width: 1rem;
-    height: 0.5rem;
-    background: url("../images/line2.png") no-repeat;
-    background-size: cover;
-    margin-left: 0.5rem;
-}
-.main{
-    font-size: 0.36rem;
-    letter-spacing: 0.11rem;
-    line-height: 2.5em;
-    padding: 0.4rem 0;
-    margin-top: 0.5rem;
-    border-top:1px solid #ffffff;
-}
-.author{
-    font-size:0.38rem;
-    text-align: right;
-    letter-spacing: 0.15rem;
-}
-.shareBtn{
-    display: inline-block;
-    font-size: 0.37rem;
-    border: none;
-    border-radius: 0.5rem;
-    color: #000000;
-    background-color: #ffffff;
-    padding: 0.2rem 0.6rem;
-    margin-top:1.5rem;
-    float: left;
-}
-.codeBox{
-    display: inline-block;
-    padding: 0.08rem 0.08rem;
-    background-color: #ffffff;
-    border-radius: 5px;
-    float: left;
-    margin-left: 2.8rem;
-}
-.code{
-    width: 2.2rem;
-    height: 2.2rem;
-}
-.codetitle{
-    display: inline-block;
-    width: 4.1rem;
-    height: 1.2rem;
-    float: right;
-    margin-top: 0.6rem;
-}
-.footer{
-    overflow: hidden;
-    margin-top: 1.7rem;
-}
-.shareNav{
-    width: 100%;
-    text-align: center;
-    background-color:#dcdcdc ;
-    position: fixed;
-    bottom: 0;
-}
-.shareNav ul{
-    overflow: hidden;
-}
-.shareTitle{
-    font-size: 0.43rem;
-    font-family: monospace;
-    color: #666666;
-    padding: 0.3rem 0;
-}
-.share{
-    width: 1.2rem;
-    height: 1.2rem;
-    background: url("../images/share1.png") no-repeat;
-    background-size: cover;
-}
-.shareName{
-    display: block;
-    font-size: 0.4rem;
-}
-.share2{
-    width: 1.2rem;
-    height: 1.2rem;
-    background: url("../images/share2.png") no-repeat;
-    background-size: cover;
-}
-.share3{
-    width: 1.2rem;
-    height: 1.2rem;
-    background: url("../images/share3.png") no-repeat;
-    background-size: cover;
-}
-.shareList span{
-    display: inline-block;
-}
-.shareList{
-   width: 2rem;
-   float: left;
-    padding: 0.3rem 0.6rem;
-}
-.btnClose{
-    font-size: 0.45rem;
-    color: #666666;
-    border-top:1px solid #666666;
-    padding: 0.25rem 0;
-}
-.shareBox{
-   position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    display: none;
-}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>每日签到</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flex.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/poster.css">
+</head>
+<body>
+<div class="content">
+    <div class="info">
+        <div><span class="week">FRI</span></div>
+        <p class="date">19</p>
+        <i class="icon"></i>
+        <p class="month">07</p>
+        <p class="main">地狱和天堂都在人间，即残疾与爱情，即原罪与拯救。</p>
+        <p class="author">——史铁生</p>
+        <div class="footer">
+            <button class="shareBtn">立即分享</button>
+            <div class="codeBox"><img src="../images/code.png" alt="" class="code"></div>
+            <img src="../images/codeTitle.png" alt="" class="codetitle">
+        </div>
+    </div>
+</div>
+<div class="shareBox">
+    <div class="shareNav">
+            <h3 class="shareTitle">分享至</h3>
+            <ul>
+                <li class="shareList"><span class="share"></span><span class="shareName">微信好友</span></li>
+                <li class="shareList"><span class="share2"></span><span class="shareName">朋友圈</span></li>
+                <li class="shareList"><span class="share3"></span><span class="shareName">保存相册</span></li>
+            </ul>
+        <div class="btnClose">取消</div>
+    </div>
+</div>
+<script>
+    $('.shareBtn').click(function () {
+        $('.shareBox').show()
+    })
+    $('.btnClose').click(function () {
+        $('.shareBox').hide()
+    })
+</script>
+</body>
+</html>
