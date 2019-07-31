@@ -34,11 +34,7 @@ html,body {
     padding:0 0.9rem;
     margin:0.7rem 0 0.3rem 1.1rem;
 }
-@media screen and (max-width: 320px) {
-    .couponTitle {
-        padding: 0 0.55rem;
-    }
-}
+
 .box{
     overflow: hidden;
     display: inline-block;
