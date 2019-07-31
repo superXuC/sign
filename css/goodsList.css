@@ -30,7 +30,7 @@
     color: #000000;
 }
 .queryBox{
-    padding-left: 0.7rem ;
+    padding-left: 0.65rem ;
     margin-top: 0.3rem;
 }
 .icon{
@@ -70,12 +70,12 @@
 }
 .goodsInfo{
     float: left;
-    width: 3.2rem;
+    width: 3.3rem;
     padding-top: 0.1rem;
     line-height: 0.6rem;
 }
 .goodsTitle{
-    font-size: 0.34rem;
+    font-size: 0.32rem;
     color: #000000;
     font-weight: bold;
     float: left;
@@ -89,7 +89,7 @@
 }
 .takenNum{
     font-size: 0.3rem;
-    margin-right: 0.6rem;
+    margin-right: 1rem;
     float: left;
 }
 .btnBox{
@@ -98,14 +98,14 @@
     padding:0.1rem  0.4rem;
 }
 .stock{
-    font-size: 0.2rem;
+    font-size: 0.3rem;
     text-align: center;
     padding-top: 0.1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 }
 .btnBox a{
     display: inline-block;
-    font-size: 0.38rem;
+    font-size: 0.3rem;
     color: #ffffff;
     padding: 0.15rem 0.43rem;
     border-radius: 20px;
